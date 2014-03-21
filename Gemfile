@@ -8,11 +8,17 @@ group :development, :test do
 	gem 'sqlite3'
 end
 
+# for heroku
 group :production do
 	gem 'pg'
 end
 
 gem 'rails_12factor'
+
+# Shoulda testing module
+group :test do
+	gem 'shoulda'
+end
 
 # Login system
 gem 'devise'
